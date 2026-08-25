@@ -5,14 +5,14 @@ description: Create, read, update, and unpublish pages over HTTP.
 
 # Pages API
 
-Base URL: `https://api.larkspur.dev/v1`
+Base URL: `https://api.nebulaos.dev/v1`
 
 ## The page object
 
 ```json
 {
   "id": "pg_9c2f1a",
-  "site_id": "st_41bd",
+  "project_id": "pr_41bd",
   "title": "Quickstart",
   "path": "/getting-started/quickstart",
   "state": "published",
@@ -33,7 +33,7 @@ Base URL: `https://api.larkspur.dev/v1`
 ## List pages
 
 ```http
-GET /sites/{site_id}/pages?state=published
+GET /projects/{project_id}/pages?state=published
 ```
 
 ## Update a page

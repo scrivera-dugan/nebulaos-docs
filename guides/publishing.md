@@ -1,21 +1,23 @@
 ---
-title: Publishing a site
+title: Publishing a project
 description: How content gets from your working branch to your readers.
 ---
 
-# Publishing a site
+# Publishing a project
 
 ## The publish flow
 
 1. Write or edit pages on a branch.
 2. Open a change request.
 3. A maintainer reviews and merges.
-4. Larkspur builds the site and deploys it.
+4. NebulaOS builds the project and deploys it.
 
 ## Publishing from the CLI
 
+Simply run the publish command and NebulaOS handles the build:
+
 ```bash
-larkspur publish --site my-docs
+nebula publish --project my-docs
 ```
 
 ## What gets published
@@ -26,10 +28,10 @@ is missing from the summary is ignored by the builder — a common cause of
 
 ## Scheduling
 
-You can schedule a publish for a future time:
+You can schedule a publish for a future time — just pass a timestamp:
 
 ```bash
-larkspur publish --at "2026-09-01T09:00:00Z"
+nebula publish --at "2026-09-01T09:00:00Z"
 ```
 
 Scheduling controls when a page *appears*. There is currently no

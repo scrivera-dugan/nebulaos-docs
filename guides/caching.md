@@ -1,6 +1,6 @@
 ---
 title: Caching and invalidation
-description: How Larkspur caches built pages at the edge, and how to clear it.
+description: How NebulaOS caches built pages at the edge, and how to clear it.
 ---
 
 # Caching and invalidation
@@ -21,8 +21,8 @@ revalidates against the origin on the next request.
 ## Manual invalidation
 
 ```bash
-larkspur cache purge --site my-docs
-larkspur cache purge --path /guides/publishing
+nebula cache purge --project my-docs
+nebula cache purge --path /guides/publishing
 ```
 
 ## Cache expiry is not content expiry

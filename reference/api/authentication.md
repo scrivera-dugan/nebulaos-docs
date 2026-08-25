@@ -10,7 +10,7 @@ description: API tokens, scopes, and request signing.
 Create a token under **Settings → API tokens**. Pass it as a bearer token:
 
 ```http
-Authorization: Bearer lk_live_...
+Authorization: Bearer nb_live_...
 ```
 
 ## Token expiry
@@ -33,7 +33,7 @@ revived; issue a new one.
 |---|---|
 | `pages:read` | Read page metadata and content. |
 | `pages:write` | Create, update, unpublish pages. |
-| `sites:admin` | Manage site settings and webhooks. |
+| `projects:admin` | Manage project settings and webhooks. |
 
 ## Webhook signatures
 

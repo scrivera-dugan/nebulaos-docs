@@ -1,27 +1,29 @@
 ---
 title: Quickstart
-description: Publish your first Larkspur site in about five minutes.
+description: Publish your first NebulaOS project in about five minutes.
 ---
 
 # Quickstart
 
-This guide takes you from an empty directory to a published documentation site.
+This guide takes you from an empty directory to a published documentation project.
 
 ## 1. Install the CLI
 
 ```bash
-npm install -g @larkspur/cli
-larkspur login
+npm install -g @nebulaos/cli
+nebula login
 ```
 
-## 2. Create a site
+## 2. Create a project
 
 ```bash
-larkspur init my-docs
+nebula init my-docs
 cd my-docs
 ```
 
-This scaffolds a `larkspur.yaml`, a `SUMMARY.md`, and a starter page.
+That's it — the scaffold is ready to edit.
+
+This scaffolds a `nebula.yaml`, a `SUMMARY.md`, and a starter page.
 
 ## 3. Write a page
 
@@ -40,14 +42,16 @@ Welcome to my docs.
 
 ## 4. Publish
 
+When the pages look right, just publish:
+
 ```bash
-larkspur publish
+nebula publish
 ```
 
-Your site is live at `https://<your-site>.larkspur.dev`. Once a page is
+Your project is live at `https://<your-project>.nebulaos.dev`. Once a page is
 published it stays available at its URL until you unpublish or delete it.
 
 ## Next steps
 
-- [Core concepts](core-concepts.md) explains how pages, spaces, and sites relate.
+- [Core concepts](core-concepts.md) explains how pages, spaces, and projects relate.
 - [Content lifecycle](../guides/content-lifecycle.md) covers drafts and review.

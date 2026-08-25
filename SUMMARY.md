@@ -8,9 +8,9 @@
 * [Core concepts](getting-started/core-concepts.md)
 
 ## Guides
-* [Publishing a site](guides/publishing.md)
+* [Publishing a project](guides/publishing.md)
 * [Content lifecycle](guides/content-lifecycle.md)
-* [Site settings](guides/site-settings.md)
+* [Project settings](guides/project-settings.md)
 * [Caching and invalidation](guides/caching.md)
 * [Collaboration](guides/collaboration.md)
 

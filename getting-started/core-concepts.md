@@ -1,13 +1,13 @@
 ---
 title: Core concepts
-description: Pages, spaces, sites, and the states a page moves through.
+description: Pages, spaces, projects, and the states a page moves through.
 ---
 
 # Core concepts
 
-## Sites, spaces, and pages
+## Projects, spaces, and pages
 
-A **site** is what your readers visit. Each site contains one or more
+A **project** is what your readers visit. Each project contains one or more
 **spaces**, and each space contains **pages**. A page is a single Markdown
 file plus its frontmatter.
 
@@ -17,10 +17,10 @@ Every page is in exactly one state:
 
 | State | Meaning | Visible to readers |
 |---|---|---|
-| `draft` | Being written. Not built into the site. | No |
+| `draft` | Being written. Not built into the project. | No |
 | `in_review` | Submitted for review by a maintainer. | No |
-| `published` | Live on the site. | Yes |
-| `unpublished` | Manually removed from the site. Content retained. | No |
+| `published` | Live on the project. | Yes |
+| `unpublished` | Manually removed from the project. Content retained. | No |
 
 A page moves `draft` → `in_review` → `published`. Once published, a page
 remains in the `published` state until an author explicitly unpublishes it.

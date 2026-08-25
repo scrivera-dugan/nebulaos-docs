@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Install the Larkspur CLI on macOS, Linux, or Windows.
+description: Install the NebulaOS CLI on macOS, Linux, or Windows.
 ---
 
 # Installation
@@ -8,19 +8,19 @@ description: Install the Larkspur CLI on macOS, Linux, or Windows.
 ## npm
 
 ```bash
-npm install -g @larkspur/cli
+npm install -g @nebulaos/cli
 ```
 
 ## Homebrew
 
 ```bash
-brew install larkspur/tap/larkspur
+brew install nebulaos/tap/nebula
 ```
 
 ## Verify
 
 ```bash
-larkspur --version
+nebula --version
 ```
 
 ## System requirements
@@ -28,5 +28,5 @@ larkspur --version
 - Node.js 20 or later
 - 200 MB free disk space for the local build cache
 
-If `larkspur` is not found after installing, make sure your npm global bin
+If `nebula` is not found after installing, make sure your npm global bin
 directory is on your `PATH`.

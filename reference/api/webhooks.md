@@ -1,11 +1,11 @@
 ---
 title: Webhooks
-description: Subscribe to page and site events.
+description: Subscribe to page and project events.
 ---
 
 # Webhooks
 
-Register an endpoint under **Settings → Webhooks**. Larkspur POSTs a JSON
+Register an endpoint under **Settings → Webhooks**. NebulaOS POSTs a JSON
 payload for each subscribed event.
 
 ## Event payload
@@ -14,7 +14,7 @@ payload for each subscribed event.
 {
   "event": "page.published",
   "sent_at": "2026-08-01T12:00:00Z",
-  "data": { "page_id": "pg_9c2f1a", "site_id": "st_41bd" }
+  "data": { "page_id": "pg_9c2f1a", "project_id": "pr_41bd" }
 }
 ```
 
@@ -26,7 +26,7 @@ payload for each subscribed event.
 | `page.published` | A page transitions to `published`. |
 | `page.unpublished` | A page is manually unpublished. |
 | `page.deleted` | A page is permanently removed. |
-| `site.deployed` | A site build finishes successfully. |
+| `project.deployed` | A project build finishes successfully. |
 
 ## Retries
 
@@ -36,5 +36,5 @@ delivery is considered failed if your endpoint does not return a 2xx within
 
 ## Verifying signatures
 
-Each request carries an `X-Larkspur-Signature` header. See
+Each request carries an `X-NebulaOS-Signature` header. See
 [Authentication](authentication.md).

@@ -1,42 +1,42 @@
 ---
 title: CLI reference
-description: Every larkspur command and its flags.
+description: Every nebula command and its flags.
 ---
 
 # CLI reference
 
-## `larkspur init`
+## `nebula init`
 
-Scaffold a new site in the current directory.
+Scaffold a new project in the current directory.
 
-## `larkspur dev`
+## `nebula dev`
 
-Serve the site locally with hot reload on `http://localhost:4400`.
+Serve the project locally with hot reload on `http://localhost:4400`.
 
 | Flag | Default | Description |
 |---|---|---|
 | `--port` | `4400` | Port to listen on. |
 | `--open` | `false` | Open a browser on start. |
 
-## `larkspur publish`
+## `nebula publish`
 
-Build and deploy the site.
+Build and deploy the project.
 
 | Flag | Default | Description |
 |---|---|---|
-| `--site` | current | Site to publish to. |
+| `--project` | current | Project to publish to. |
 | `--at` | now | Schedule the publish for an ISO 8601 timestamp. |
 | `--dry-run` | `false` | Build without deploying. |
 
-## `larkspur unpublish`
+## `nebula unpublish`
 
-Remove a published page from the site. Content is retained.
+Remove a published page from the project. Content is retained.
 
 ```bash
-larkspur unpublish <page-id>
+nebula unpublish <page-id>
 ```
 
-## `larkspur audit`
+## `nebula audit`
 
 Report pages that may need attention.
 
@@ -45,6 +45,6 @@ Report pages that may need attention.
 | `--stale-after` | `180d` | Flag pages not edited within this window. |
 | `--json` | `false` | Emit machine-readable output. |
 
-## `larkspur cache purge`
+## `nebula cache purge`
 
 Invalidate edge cache entries. See [Caching](../guides/caching.md).

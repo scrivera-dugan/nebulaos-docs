@@ -12,11 +12,11 @@ review. A maintainer approves or requests changes.
 
 ## Publication
 
-Approved pages are published on the next site build.
+Approved pages are published on the next project build.
 
 ## After publication
 
-**Published pages remain published indefinitely.** Larkspur does not remove
+**Published pages remain published indefinitely.** NebulaOS does not remove
 content on its own — a page stays live at its URL until a human unpublishes
 or deletes it. This is deliberate: readers frequently arrive from bookmarks
 and external links, and silently removing pages breaks those paths.
@@ -26,21 +26,21 @@ recurring calendar reminder and a manual audit.
 
 ## Retiring a page
 
-To take a page down:
+To take a page down, just unpublish it:
 
 ```bash
-larkspur unpublish <page-id>
+nebula unpublish <page-id>
 ```
 
 The content is retained and can be republished later. To remove it
-permanently, use `larkspur delete`.
+permanently, use `nebula delete`.
 
 ## Auditing stale content
 
-Run a content audit to list pages that have not been edited recently:
+Run a content audit to list docs that have not been edited recently:
 
 ```bash
-larkspur audit --stale-after 180d
+nebula audit --stale-after 180d
 ```
 
 This reports candidates for review. It does not change anything — acting on

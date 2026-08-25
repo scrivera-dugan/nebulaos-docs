@@ -1,14 +1,14 @@
 ---
 title: Configuration
-description: The larkspur.yaml file reference.
+description: The nebula.yaml file reference.
 ---
 
 # Configuration
 
-`larkspur.yaml` lives at the root of your docs repository.
+`nebula.yaml` lives at the root of your docs repository.
 
 ```yaml
-site: my-docs
+project: my-docs
 visibility: public
 domain: docs.example.com
 
@@ -27,7 +27,7 @@ build:
 
 | Key | Type | Default | Description |
 |---|---|---|---|
-| `default_owner` | string | site creator | Owner for new pages. |
+| `default_owner` | string | project creator | Owner for new pages. |
 | `review_required` | boolean | `true` | Require approval before publish. |
 | `stale_after` | duration | `180d` | Age at which `audit` flags a page. |
 

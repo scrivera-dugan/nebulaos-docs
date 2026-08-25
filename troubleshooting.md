@@ -13,17 +13,17 @@ excluded from the build.
 ## My edit isn't live yet
 
 HTML responses are cached for 60 seconds at the edge. Wait a minute, or run
-`larkspur cache purge --path /your/page`.
+`nebula cache purge --path /your/page`.
 
 ## A page I expected to be live is missing
 
 Check the page's state with `GET /pages/{id}`. If it shows `unpublished`,
-someone removed it manually — check the site audit log under
+someone removed it manually — check the project audit log under
 **Settings → Activity**.
 
 ## Build fails with "missing frontmatter"
 
-Every page needs `title` and `description`. Run `larkspur lint` locally.
+Every page needs `title` and `description`. Run `nebula lint` locally.
 
 ## 401 on API calls
 
